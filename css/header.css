@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200..800&family=League+Gothic&family=Marmelad&family=Montserrat+Alternates:wght@200&family=Podkova:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=League+Gothic&family=Marmelad&family=Montserrat+Alternates:wght@200&family=Podkova:wght@400..800&display=swap');
+
+
+body{
+    margin:0 0 0 0;
+    font-family: Dosis;
+    font-weight: 500;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2A96D5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-left .logo img {
+    border-radius: 50%; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    margin-right:10px;
+}
+
+.Index_Btn svg{
+    padding: 1%;
+    width: 4%;
+    position: fixed;
+    inset: 87% 3% 0px auto;
+    display: grid;
+    grid-template-rows: 35px 1fr 35px; 
+    z-index: 100;
+
+    box-shadow: 0 4px 8px rgba(0.5, 0.5, 0.5, 0.5);
+    background-color:aliceblue;
+    border-radius: 50%;
+}
+
+
+.Index_Btn svg:hover{
+    background-color: #2A96D5;
+}
+
+
+.nav-links .TrangChu{
+    width: 5%;
+}
+
+.header .name{
+    width: 15%;
+    font-size:xx-large;
+    font-family: Dancing Script;
+    color: #fffbb2;
+    font-weight: 900;
+}
+
+/* Định dạng menu điều hướng */
+.nav-links {
+    display: flex;
+    gap: 4%;
+    width: 40%;
+    align-self: center;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color:aliceblue;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #39e5ff;
+    transform: scale(1.1);
+    background-color: rgba(255,255, 255, 0.1);
+}
+/* Gio hang */
+button{
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 8px 16px;
+    margin: 5px;
+}
+button:first-of-type{
+    background-color: #fff;
+    color: #2A96D5;
+    border: 2px solid #2A96D5;
+}
+button:first-of-type:hover{
+    background-color: #2A96D5;
+    color:#fff;
+}
+/* Định dạng nút login */
+.login-btn {
+    width: 8%;
+    color: #fff;
+    background-color: #0056b3;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    border:2px solid #39e5ff;
+}
+html{
+    scroll-behavior: smooth;
+}

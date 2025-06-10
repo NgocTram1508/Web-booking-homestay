@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200..800&family=League+Gothic&family=Marmelad&family=Montserrat+Alternates:wght@200&family=Podkova:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=League+Gothic&family=Marmelad&family=Montserrat+Alternates:wght@200&family=Podkova:wght@400..800&display=swap');
+
+
+html, body {
+  height: fit-content;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Dosis", sans-serif;
+}
+
+
+
+.div-lpicture{
+    /* overflow: hidden; */
+    margin-left: 10%;
+    width: 80%;
+    height: 80%;
+    margin-top: 30px;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .images{
+    display: flex;
+    transition: 0.5s;
+  }
+
+  .btn:hover{
+    color: #999;
+  }
+  .btn{
+    font-size: 45px;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .btnL{
+    left: 0;
+  }
+  .btnR{
+    right: 0;;
+  }
+
+  .index-img{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .index-item{
+    border: 2px solid #999;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50%;
+  }
+  .active{
+    background-color: #999;
+  }
+
+/*  */
+.content {
+  flex: 1;
+}
+
+.User_Hello{
+  color: aliceblue;
+  padding-right: 10px;
+}
+
+.User_name{
+  font-family: Dancing Script;
+  font-size: x-large;
+  color: aliceblue;
+  padding-right: 10px;
+}
+
+/*  */
+
+
+/* Phan anh */
+.layout2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 250px 80px 250px ;
+  gap:30px;
+  /* padding: 30px; */
+  margin-top:20px;
+}
+
+.layoutitem{
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.layoutitem:first-child{
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.layoutitem:nth-child(2),
+.layoutitem:nth-child(3){
+  grid-row: 1/3;
+}
+
+.layoutitem:nth-child(4),
+.layoutitem:nth-child(5){
+  grid-row: 2/4;
+}
+
+.layoutitem:last-child{
+  grid-column: 3/5;
+}
+
+.layoutimage{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ảnh địa điểm */
+.khung{
+  padding-left: 15%;
+  padding-right: 15%;
+  height: 250%;
+
+}
+.list{
+  height: 50%;
+  overflow: hidden;
+  /* margin-left: 5%;
+  margin-top: 3%; */
+  position: relative;
+}
+
+
+.listimages {
+  /* padding-right: 40%; */
+  display: flex;
+  /* flex-wrap: nowrap;  */
+  transition: transform 0.5s;
+  height: 100%;
+  width:200%;
+  /*  */
+}
+
+.anh_container {
+  width: 100%;
+  margin-right: 10px;
+  object-fit: cover;
+  border-radius: inherit;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.anh_container img{
+  height: 80%;
+}
+
+.anh_container:hover{
+  transform: scale(0.9);
+}
+
+.anh {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.comment {
+  text-align: center;
+  font-size: 120%;
+}
+
+.bx{
+  padding: 15% 0 0 0;
+}
+
+.btnL1{
+  background-color: #007BFF;
+  border-radius: 20%;
+  left: 0;
+}
+
+.btnR1 {
+  background-color: #007BFF;
+  border-radius: 20%;
+  right: 0;
+}
+
+.btn1 {
+  font-size: 45px;
+  top: 35%;
+  transform: translateY(-50%);
+  color:  white;
+  transition: 0.5s;
+  cursor: pointer;
+  position: absolute;
+}
+.btn1:hover{
+  background-color: white;
+  color: #007BFF;
+}
+/* tour */
+
+.tour-khung {
+  display: flex;
+  gap: 4%; 
+  flex-wrap: wrap; 
+  justify-content: flex-start; 
+}
+
+.tour-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 22%;
+  height: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.tour-item:hover{
+  transform: scale(1.1);
+}
+
+.tour-image {
+  width: 100%;
+  height: 50%;
+  
+}
+
+.tour-info {
+  padding: 12px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.tour-name {
+  font-size: 18px;
+  margin: 8px 0 4px;
+  color: #333;
+}
+
+.tour-price {
+  font-size: 16px;
+  color: #ff5722;
+  margin: 0;
+}
+
+/*  */
+/*  */
+/*  */
+
+
+
+
+.container {
+  width: auto;
+  margin-right: 20%;
+  margin-left: 20% ;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header h1 {
+  font-size: 24px;
+}
+.rating {
+  font-size: 20px;
+  color: #ffcc00;
+}
+.location {
+  color: #0078d4;
+  margin-top: 5px;
+  clear: both;
+}
+
+
+/*  */
+
+th, td {
+  padding: 2%;
+  text-align: left;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.khung .ST_Mota .ST_In4 tr{
+  background-color: transparent;
+}
+
+th {
+  background-color: #0078d4;
+  color: #ddd;
+}
+
+.Table1{
+  width: 60%;
+}
+
+.Table2{
+  width: 20%;
+}
+
+.ST_title{
+  float: left;
+}
+
+.ST_name p{
+  font-size: 250%;
+  font-weight: 700;
+}
+
+
+.ST_dis p{
+  padding-bottom: 5%;
+  font-size: 130%;
+  color: #0078d4;
+}
+
+.khung .ST_PrS{
+  float: left;
+  background-color: #005bb5;
+  border: 5px solid #005bb5;
+  text-align: center;
+  color: #f8f8f8;
+  padding: 1%;
+}
+
+.khung .ST_PrS:hover{
+  border: 5px solid #005bb5;
+  color: #98f6ff;
+}
+
+.ST_Price p{
+  font-size: 150%;
+  font-weight: 700;
+}
+
+.ST_Status p{
+  text-align: center;
+  font-size: 100%;
+}
+
+.ST_Pic{
+  height: 40%;
+  clear: both;
+}
+
+.ST_Pic .main-img{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 400px;
+}
+.main-img img {
+  width: calc(50.33% - 10px);
+  border-radius: 5px;
+  height: 100%;
+}
+
+.ST_Mota{
+    padding: 2%;
+}
+
+.ST_In4{
+  color:#0078d4;
+  width: 75%;
+  float: right;
+  font-size: 110%;
+}
+
+.In4_script{
+  height: 150%;
+}
+
+
+.noidung p{
+  font-size: medium;
+}
+.aline-left{
+  text-align: left;
+  border: 0px;
+}
+.rating{
+  border: 0px;
+  text-align: left;
+}
+
+/*  */
+
+.review-form {
+  height: 300px;
+  width: 30%;
+  background: #fff;
+  border-radius: 10px;
+  float: left;
+  padding-top: 4%;
+}
+
+.binhluan{
+  height: 500px;
+  width: 68%;
+  float: right;
+}
+
+.binhluan h2{
+  padding-bottom: 1%;
+  text-align: center;
+  align-items: center;
+}
+
+.Commment{
+  height: 80%;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 10px;
+  padding: 5%;
+  overflow: auto;
+}
+
+.form-group {
+  padding: 2%;
+}
+
+.Name_tag{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 5%;
+  border-radius: 10px;
+
+}
+
+.form-group input, .form-group textarea, .form-group select {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5%;
+}
+
+.form-group textarea {
+  width: 100%;
+  resize: vertical;
+  height: 200px;
+}
+
+.submit-btn {
+  display: block;
+  width: 95%;
+  padding: 2%;
+  background: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background: #005bb5;
+}
+/* 
+
+
+*/
+.phantrang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.phantrang .pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.phantrang .pagination a,
+.phantrang .pagination .active {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #007BFF;
+  color: #007BFF;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.phantrang .pagination a:hover {
+  background-color: #007BFF;
+  color: white;
+}
+
+.phantrang .pagination .active {
+  background-color: #007BFF;
+  color: white;
+}
+
+.phantrang .pagination .prev,
+.phantrang .pagination .next {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #007BFF;
+  color: #007BFF;
+}
+
+.phantrang .pagination .prev:hover,
+.phantrang .pagination .next:hover {
+  background-color: #007BFF;
+  color: white;
+}

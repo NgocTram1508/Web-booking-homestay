@@ -1,0 +1,79 @@
+.khung{
+  padding-left: 15%;
+  padding-right: 15%;
+  height: 150%;
+  margin-top: 3%;
+  margin-bottom: 10%;
+}
+
+.khung form{
+  height: 50px;
+  text-align: center;
+  align-content: center;
+  border-style: dotted;
+}
+
+.khung form label{
+  font-size: 120%;
+}
+
+.khung form select{
+  appearance: none;
+  border: 0px;
+  width: 15%;
+  background-color: transparent;
+  color: #2A96D5;
+  font-size: 120%;
+  font-weight: bold;
+  text-align: center;
+  outline: none;
+}
+
+.tour-khung {
+  display: flex;
+  gap:6%; /* Khoảng cách giữa các thẻ item */
+  flex-wrap: wrap; /* Để các item xuống dòng nếu không đủ không gian */
+  justify-content:start; /* Căn giữa các item trong khung */
+  padding: 2%;
+}
+.tour-item {
+  margin: 5px 5px 5px 5px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 19%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.tour-item:hover{
+  transform: scale(1.1);
+}
+
+.tour-image {
+  width: 100%;
+  height: 150px;
+  
+}
+
+.tour-info {
+  padding: 12px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.tour-name {
+  font-size: 18px;
+  margin: 8px 0 4px;
+  color: #333;
+}
+
+.tour-price {
+  font-size: 16px;
+  color: #ff5722;
+  margin: 0;
+}

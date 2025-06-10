@@ -1,0 +1,99 @@
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.footer-container{
+	max-width: 1170px;
+	margin:auto;
+}
+.footer-row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+
+footer {
+	margin-top: 10%;
+    background-color: #2A96D5; /* Chọn màu phù hợp */
+    color: white;
+    padding: 20px;
+	
+}
+
+html, body {
+	width: auto;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer-col{
+   width: 25%;
+   padding: 0 5%;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -65%;
+	background-color: #c0d466;
+	height: 20%;
+	box-sizing: border-box;
+	width: 50%;
+}
+
+.footer-col ul{
+	height: 20%;
+}
+
+.footer-col ul li a{
+	font-size: 110%;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 20px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: #2A96D5;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #9e7070;
+	transition: all 0.5s ease;
+}
+li{
+	padding: 2%;
+}
+
+
+
+
+
+
+
